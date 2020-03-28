@@ -60,7 +60,7 @@ def include(self, components, path_or_resource):
 
 def get_bowerstatic_path(self, components_name, component_name, resource_name):
     """
-    Returns the url of the bower resources, so it can be used manualy in a view.
+    Returns the url of the bower resources, so it can be used manually in a view.
     """
     components =  bower._component_collections[components_name]
     return components.get_component(component_name).url() + resource_name
